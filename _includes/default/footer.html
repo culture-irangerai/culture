@@ -1,0 +1,49 @@
+{%-comment-%}
+zamtar tarah
+{%-endcomment-%}
+
+{%- if site.data.conf.main.main_footer_centered %}
+  {%- assign footer_class = 'footer-text-centered' -%}
+{% endif -%}
+{%- include default/copyright-text.liquid %}
+
+{%- if site.data.conf.main.creative_commons.enable and site.data.conf.main.creative_commons.tooltip-%}
+  {%- capture tooltip_creative_commons -%}
+    data-toggle="tooltip" data-placement="top" data-tooltip-no-hide title="{{ site.data.lang[lng].creative_commons[site.data.owner.creative_commons.license_type] }}"
+  {%- endcapture %}
+{%- endif -%}
+
+{%- if site.data.conf.main.copyright_add_text_to_end -%}
+  {%- assign copyright_text_out = copyright_text_out | append: site.data.lang[lng].copyright.additional_text -%}
+{%- endif -%}
+
+{%- if site.data.conf.main.creative_commons.enable or site.data.conf.main.copyright_add_text_to_end -%}
+  {%- assign footer_class = footer_class | append: ' long-copyright' -%}
+{%- endif -%}
+
+{%- if site.data.conf.main.creative_commons.add_all_icons -%}
+  {%- assign lic_type_list = site.data.owner.creative_commons.license_type | split: '-' -%}
+  {%- assign img_list = nil -%}
+  {%- for lic_type in lic_type_list %}
+    {%- assign img_list = img_list | append: img_template | replace: '$lic_type', lic_type -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<div class="footer-wrapper">
+  <div class="footer-container">
+    <footer translate="no">
+      {% if site.data.conf.main.main_footer -%}
+        <div class="footer-text {{ footer_class }}">
+        
+          {%- if site.data.conf.main.creative_commons.enable -%}
+            {%- assign license_url = site.data.conf.main.creative_commons.license_url
+              | replace: site.data.conf.main.creative_commons.license_replace, site.data.owner.creative_commons.license_type
+              | replace: site.data.conf.main.creative_commons.lang_replace, lng
+            -%}
+          {%- endif -%}
+        </div>
+      {% endif -%}
+      <p class="footer-powered"><a href="https://irangerai.com" target="_blank" rel="noopener noreferrer">خانه</a> / تماس:⇐<a class="fa fa-phone" aria-hidden="true" href="tel:004741474842"> +4741474842</a>/پیامک:⇐<a class="fa fa-comments-o" aria-hidden="true" href="sms:+4741474842" target="_blank" rel="noopener noreferrer"> SMS</a> / <a class="fa fa-telegram" aria-hidden="true" href="https://t.me/Iranshahrnowin" target="_blank" rel="noopener noreferrer"> تلگرام </a> خلج</p>
+    </footer>
+  </div>
+</div>

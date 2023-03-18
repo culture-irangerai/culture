@@ -1,0 +1,24 @@
+---
+layout: util/compress
+---
+{%- assign app_name = site.data.owner.brand | append: "'s App" -%}
+{%- assign description = site.data.lang[site.data.conf.main.default_lng].meta_common_description | replace: site.data.conf.main.brand_replace, site.data.owner.brand -%}
+{
+  "short_name": "{{ app_name }}",
+  "name": "{{ app_name }}",
+  "description": "{{ description }}",
+  "icons": [
+  {
+    "src": "{{ site.baseurl }}/assets/img/favicons/composite-sheet.webp",
+    "sizes": "32x32",
+    "type": "image/webp",
+    "purpose": "any maskable"
+  }
+  ],
+  "start_url": "{{ site.baseurl }}/",
+  {%-comment%}"scope": "/",{%endcomment%}
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#808080",
+  "background_color": "#808080"
+}

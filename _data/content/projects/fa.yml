@@ -1,0 +1,41 @@
+# you can move this content to front matter of [language]/tabs/projects.md
+###########################################################
+#                Projects Page Data
+###########################################################
+page_data:
+  main:
+    header: "بخش ها"
+    info: "بخش ها"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: ":ezgif.com-gif-maker.webp"
+    back_color: "lightblue"
+
+  category:
+    - title: "فروشگاه"
+      type: id_shop
+      color: "black"
+    - title: "شرکت"
+      type: id_company
+      color: "black"
+      
+  list:
+    - type: id_shop
+      project_name: "سیماگرا"
+      project_excerpt: "صوتی"
+      img: ":iranshahrblack.png"
+      img_title: "mmm"
+      date: "2022-04-30"
+      post: |
+       شرح
+
+    - type: id_company
+      project_name: "آوا گرا"
+      project_excerpt: "تست"
+      img: ":iranshahrblack.png"
+      img_title: "mmmm"
+      date: "2022-04-30"
+      post: |
+       شرح
+
+        

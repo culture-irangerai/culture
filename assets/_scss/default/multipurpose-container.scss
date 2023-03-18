@@ -1,0 +1,49 @@
+#main-wrapper {
+    padding-right: var(--side-nav-width);
+    transition: all 0.4s ease;
+}
+
+.main-container {
+    min-height: calc(100vh - (var(--top-nav-height) + var(--footer-height)));
+    max-width: var(--main-container-max-width);
+    padding-right: var(--main-container-margin);
+    padding-left: var(--main-container-margin);
+    padding-top: var(--main-container-margin);
+    padding-bottom: var(--main-container-padding-bottom);
+}
+
+html[lang="en-US"] .main-container {
+    direction: ltr
+}
+
+html[lang="en-US"] .new-posts>li span {
+    right: 0px;
+    left: unset
+}
+
+.multipurpose-container {
+    @include get_scheme(default-colors-);
+    background-color: var(--multipurpose-container-background-color);
+    box-shadow: 0 3px 25px #00000014;
+    border-radius: 10px;
+    padding: var(--text-spacing);
+    margin-bottom: var(--multipurpose-container-margin-bottom);
+}
+
+
+/* for bottom spacing */
+
+.multipurpose-container:last-child {
+    margin-bottom: 0px;
+}
+
+.multipurpose-container h1:first-child,
+.multipurpose-container h2:first-child,
+.multipurpose-container h3:first-child {
+    margin-top: 0px;
+}
+
+.multipurpose-container>p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}

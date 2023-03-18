@@ -1,0 +1,230 @@
+lng:
+  name: Persian
+  # based on ISO_639-1 https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+  code: fa
+  # specifically needed for open-graph meta og:locale. if open-graph not enabled, not necessary
+  # For html برچسبs, you can enable or disable using html_lng_with_country_code defined in _data/conf/main.yml
+  # based on ISO_3166-1 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+  country: IR
+  switch_title: IR
+  offer:
+    title: Language
+    msg_page: View this page in Persian.
+    # if page translation is not available, use this.
+    msg_site: To Persian home page
+
+date:
+  long: "%b %-d, %Y"
+  day: "%d"
+  year: "%Y"
+  months: [ژانویه, فوریه, مارس, آوریل, می, ژوئن, جولای, آگوست, سپتامبر, اکتبر, نوامبر, دسامبر]
+
+not_found:
+  header: برگه پیدا نشد
+  line1: صفحه مورد نظر شما یافت نشد.
+  line2: منو یا جستجوی سایت را در صورت وجود امتحان کنید.
+
+no_translation_tooltip: No Translation
+
+navigation:
+  brand_sub_text: طراحی وبسایت و تبلیغات اینترنتی
+  contact_header: دنبال کنید
+
+color_scheme_switch_tooltip: اکسیمای رنگ
+
+search:
+  placeholder: جستجو
+  noResultText: چیزی پیدا نشد.
+
+image_viewer:
+  load_error: تصویر بارگیری نشد.
+
+copyright:
+  additional_text: " kargobak"
+
+creative_commons:
+  some_rights_reserved: 
+  # check _data/owner.yml for license type.
+  by: به جز مواردی که غیر از این ذکر شده باشد، محتوای این وب سایت تحت مجوز Creative Commons Attribution 4.0 بین المللی مجوز دارد.
+  by-nd: به جز مواردی که در غیر این صورت ذکر شده باشد، محتوای این وب سایت تحت مجوز Creative Commons Attribution-NoDerivatives 4.0 International مجوز دارد.
+  by-sa: به جز مواردی که غیر از این ذکر شده باشد، محتوای این وب سایت تحت مجوز Creative Commons Attribution-ShareAlike 4.0 International مجوز دارد.
+  by-nc: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+  by-nc-nd: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+  by-nc-sa: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+# for 404 layout
+not-found:
+  title: "404"
+
+# for post layout
+post:
+  read_time:
+    unit: " دقیقه"
+    text: " زمان مطالعه"
+  pager_buttons:
+    older_post: "← نوشته قدیمی تر"
+    newer_post: "نوشته جدید تر →"
+    first_post: اولین
+    last_post: آخرین
+  comments:
+    disqus:
+      count_title: دیدگاه ها
+      noscript: لطفا جاوا اسکریپت را برای مشاهده نظرات فعال کنید.
+      click_to_load: "بارگیری نظرها"
+      consent:
+        title: نظرها (Disqus.com)
+        text: >
+           ویژگی نظر توسط شخص ثالث میزبانی می شود. با نمایش محتوای خارجی، $terms و $privacy_policy disqus.com را می پذیرید.
+           <br>اگر ترجیح می دهید از تبلیغات هدفمند انصراف دهید، $settings_link را باز کنید و روی دکمه "انصراف" کلیک کنید و ببندید. به اینجا برگردید و نظرات را بارگیری کنید.
+        terms_link_text: شرایط استفاده
+        privacy_link_text: خط مشی رازداری
+        settings_link_text: این پیوند
+        button:
+          load_once: فقط این دفعه نشان بده
+          load_and_do_not_ask_again: همیشه نشان بده
+  table_of_contents:
+    heading: فهرست موضوعات این برگه
+    tooltip:
+      move: برای حرکت دادن بکشید
+      close: بستن
+  share:
+    heading: هم رسانی در
+    link_copied: پیوند کپی شد
+    tooltip:
+      # keys need to match with _data/share.yml
+      twitter: Twitter
+      facebook: Facebook
+      telegram: Telegram
+      linkedin: LinkedIn
+      email: Email
+      copy_link: کپی پیوند
+
+# for post-list layout
+post-list:
+  title: بلاگ
+  button_name: بلاگ
+  upside_down_tabs:
+    tab:
+      all: همه
+      categories: دسته ها
+      tags: برچسب ها
+      years: سال
+      clear: پاک
+      close: بستن
+      tooltip:
+        clear: پاک
+        close: بستن
+    msg:
+      property_list:
+        # keys need to match with /query/post-query.json
+        tags: برچسب
+        category: دسته
+        year: سال
+      # you can use these wildcards, {property} {value} {thumb}
+      resultFoundTitleFormat: "{property} : {thumb}"
+
+# for home layout
+home:
+  title: ایرانگرایی
+  button_name: خانه
+  new_posts_title: نوشته‌های جدید
+  new_posts_show_more_button: بیشتر ...
+  # you can use $site_brand in line1 and line2 to convert your site.data.owner.brand text
+  top_header_line1: "ایرانگرایی"
+  # if commented, top header will be a single line
+  top_header_line2: "بستر امن نویسندگان"
+
+# for archives layout
+archives:
+  title: آرشیو
+  button_name: آرشیو
+  page_header: آرشیو
+
+# for about layout
+about:
+  title: درباره
+  button_name: درباره
+  sub_title: "ایرانگرایی"
+  email_title: ایمیل
+
+# for links layout
+links:
+  title: پیوندها
+  button_name: پیوندها
+  link_text: تارنما
+  info_text: اطلاعات
+
+# for projects layout
+projects:
+  title: پروژه‌ها
+  button_name: پروژه‌ها
+  read_more_text: مشاهده جزئیات بیشتر
+  read_less_text: جمع شدن
+
+# for privacy-policy layout
+privacy-policy:
+  title: &privacy_policy_title خط مشی
+
+# seo meta this is needed for each language
+# If meta_description is not defined in front matter, it's created from (post / page) content,
+# if it has no content, this will be used for page description. It is also used in manifest.json
+meta_common_description: قیمت | تبلیغات اینترنتی 
+
+auto_content:
+  title: پست خودکار
+  greeting: طراحی وبسایت و تبلیغات اینترنتی
+  text: *meta_info
+  more_info: اطلاعات بیشتر
+  auto_generated_text: به نام یگانه معمار هستی . ایرانگرایی یکی از با تجربه ترین طراحان و مبلغ در زمینه اینترنت می باشد که با شناخت صحیح نیاز مشتریان و بهره گیری از دانش روز دنیا توانسته است حضوری متفاوت در راستای مشاوره،طراحی و بهینه سازی سئو وبسایت ها داشته باشد.
+
+cookie_consent:
+  privacy_policy_link_text: *privacy_policy_title
+  side_nav_setting_button_tooltip: &cookie_settings تنظیمات کوکی
+  panel_bar:
+    msg: >
+      این وب سایت از کوکی ها برای بهینه سازی عملکرد سایت استفاده می کند.
+       این ویژگی تایید شما فعال خواهد شد. لطفاً برای سیاست کوکی روی هر مورد زیر کلیک کنید.
+    buttons:
+      accept: &accept_button اجازه به همه موارد
+      settings: سفارشی کردن
+      deny: &deny_button رد
+  panel_settings:
+    title: *cookie_settings
+    msg: >
+      این وب سایت از کوکی ها برای بهینه سازی عملکرد سایت استفاده می کند.
+       این ویژگی تایید شما فعال خواهد شد. لطفاً برای سیاست کوکی روی هر مورد زیر کلیک کنید.
+    buttons:
+      accept: *accept_button
+      save: بعداً
+      deny: *deny_button
+    always_active: اجازه فعال سازی
+    consent_types:
+      necessary:
+        title: کوکی های کاملا ضروری
+        info: >
+          این کوکی ها برای عملکرد وب سایت ضروری هستند و غیرفعال نمی شوند.
+           آنها معمولاً زمانی تنظیم می شوند که عملکرد سایت مانند طرح رنگ و غیره تغییر کند.
+           این کوکی ها هیچ اطلاعات قابل شناسایی شخصی را ذخیره نمی کنند.
+           $tag_info
+      analytics:
+        title: کوکی های عملکرد #Performance and analytics cookies
+        info: $tag_info
+      preferences:
+        title: کوکی های عملکردی
+        info: $tag_info
+      advertising:
+        title: کوکی های هدف گذاری و تبلیغاتی
+        info: $tag_info
+    tag_info:
+      # from https://support.google.com/برچسبmanager/answer/10718549#consent-types
+      ad_storage: >
+        ذخیره سازی (مانند کوکی ها) مرتبط با تبلیغات را غیرفعال می کند.
+      analytics_storage: >
+        ذخیره سازی (مانند کوکی ها) مربوط به تجزیه و تحلیل را فعال می کند. مدت زمان بازدید
+      functionality_storage: >
+        فضای ذخیره سازی را فعال می کند که از عملکرد وب سایت یا برنامه پشتیبانی می کند، به عنوان مثال. تنظیمات زبان.
+      personalization_storage: >
+        ذخیره سازی مربوط به شخصی سازی را فعال می کند، به عنوان مثال. توصیه های ویدیویی
+      security_storage: >
+        ذخیره سازی مرتبط با امنیت مانند عملکرد احراز هویت را فعال می کند،
+         جلوگیری از تقلب و سایر محافظت از کاربر.

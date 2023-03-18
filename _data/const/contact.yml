@@ -1,0 +1,41 @@
+# The contact account constants
+# for icons https://fontawesome.com/v4.7/icons/
+# keys need to match with accounts in _data/owner.yml file
+
+email:
+  icon: "fa fa-envelope-o"
+  url: "kapitansam9@gmail.com"
+#linkedin:
+  #icon: "fa fa-linkedin"
+  #url: "https://www.linkedin.com/in/###/"
+#youtube:
+  #icon: "fa fa-youtube-play"
+  #url: "https://www.youtube.com/channel/###"
+#facebook:
+ # icon: "fa fa-facebook"
+  #url: "https://www.facebook.com/###"
+#telegram:
+ # icon: "fa fa-telegram"
+ # url: "https://t.me/###"
+#vk:
+ # icon: "fa fa-vk"
+ # url: "https://vk.com/###"
+#odnoklassniki:
+ # icon: "fa fa-odnoklassniki-square"
+ # url: "https://ok.ru/###"
+#pinterest:
+ # icon: "fa fa-pinterest"
+ # url: "https://www.pinterest.com/###/_saved/"
+#reddit:
+ # icon: "fa fa-reddit"
+ # url: "https://www.reddit.com/user/###"
+#medium:
+ # icon: "fa fa-medium"
+#  url: "https://###.medium.com"
+#whatsapp:
+ # icon: "fa fa-whatsapp"
+ # url: "https://wa.me/989122448082"
+# add your new contact
+# your_new_contact:
+#   icon: "fa fa-font"
+#   url: "https://www.example.com"

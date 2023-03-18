@@ -1,0 +1,48 @@
+# Post share links
+# for icons https://fontawesome.com/v4.7/icons/
+# for links https://github.com/bradvin/social-share-urls
+# only {url}, {title}, {text} are supported. {title} and {text} are the same.
+# keys need to match with share. Tooltip definitions in _data/lang/[language].yml file
+
+- twitter:
+  icon: "fa fa-twitter-square"
+  url: "https://twitter.com/intent/tweet?url={url}&text={title}"
+- facebook:
+  icon: "fa fa-facebook-square"
+  url: "https://www.facebook.com/sharer/sharer.php?u={url}"
+- whatsapp:
+  icon: "fa fa-whatsapp"
+  url: "whatsapp://send?text={title}%20{url}"
+- linkedin:
+  icon: "fa fa-linkedin-square"
+  url: "https://www.linkedin.com/sharing/share-offsite/?url={url}"
+- odnoklassniki:
+  icon: "fa fa-odnoklassniki-square"
+  url: "https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl={url}"
+- pinterest:
+  icon: "fa fa-pinterest"
+  url: "http://pinterest.com/pin/create/link/?url={url}"
+- copy_link:
+  icon: "fa fa-link"
+  url: ""
+- telegram:
+  icon: "fa fa-telegram"
+  url: "https://t.me/share/url?url={url}&text={text}"
+- skype:
+  icon: "fa fa-skype"
+  url: "https://web.skype.com/share?url={url}&text={text}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
