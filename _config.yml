@@ -46,7 +46,7 @@ defaults:
   #     image_viewer_on: true
   #     image_lazy_loader_on: true
 ############################################
-staticman_url: https://api.staticman.net/v3/entry/github/culture-irangerai/culture/master/comments
+
 ###########################################################
 # Markdown Options (https://jekyllrb.com/docs/configuration/markdown/)
 # Configuring Jekyll in your GitHub Pages site (https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
